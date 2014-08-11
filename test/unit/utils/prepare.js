@@ -7,8 +7,16 @@ function mock (id, html, attrs) {
             el.setAttribute(attr, attrs[attr])
         }
     }
-    document.getElementById('test').appendChild(el)
+    appendMock(el)
     return el
+}
+
+function appendMock(el) {
+    document.getElementById('test').appendChild(el)
+}
+
+function cleanupMock(el) {
+    document.getElementById('test').removeChild(el)
 }
 
 function mockHTMLEvent (type) {
