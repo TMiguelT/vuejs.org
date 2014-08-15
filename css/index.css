@@ -218,14 +218,12 @@ a.button:hover {
 #ad .carbon-text {
   display: block;
   margin-bottom: 6px;
+  font-weight: normal;
+  color: #34495e;
 }
 #ad .carbon-poweredby {
   color: #aaa;
-}
-@media screen and (max-width: 720px) {
-  #ad {
-    display: none;
-  }
+  font-weight: normal;
 }
 html,
 body {
@@ -571,6 +569,14 @@ body {
   }
   #why h2 {
     font-size: 1.35em;
+  }
+  #ad {
+    position: static;
+  }
+  #ad .carbon-img,
+  #ad .carbon-text,
+  #ad .carbon-poweredby {
+    display: inline-block;
   }
 }
 @media screen and (max-width: 860px) {
